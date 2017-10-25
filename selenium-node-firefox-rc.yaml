@@ -2,10 +2,11 @@ apiVersion: v1
 kind: ReplicationController
 metadata:
   name: selenium-node-firefox 
+  namespace: selenium
   labels:
     name: selenium-node-firefox
 spec:
-  replicas: 3
+  replicas: 1 
   selector:
     name: selenium-node-firefox
   template:
